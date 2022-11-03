@@ -21,7 +21,14 @@
   "scripts": {
     "clean": "rimraf node_modules dist",
     "fresh": "pnpm clean && pnpm i",
-    "nuke": "rimraf pnpm-lock.yaml && pnpm fresh"
+    "nuke": "rimraf pnpm-lock.yaml && pnpm fresh",
+    "format": "prettier",
+    "format:check": "pnpm format --check --debug-check",
+    "format:fix": "pnpm format --write"
+  },
+  "devDependencies": {
+    "@muravjev/configs-prettier": "^0.1.4",
+    "prettier": "^2.7.1"
   },
   "engines": {
     "node": ">=14.16.0",
