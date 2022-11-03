@@ -22,6 +22,7 @@
     "clean": "rimraf node_modules dist",
     "fresh": "pnpm clean && pnpm i",
     "nuke": "rimraf pnpm-lock.yaml && pnpm fresh",
+    "test": "jest",
     "format": "prettier",
     "format:check": "pnpm format --check --debug-check",
     "format:fix": "pnpm format --write",
