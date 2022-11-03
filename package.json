@@ -30,6 +30,8 @@
     "remark": "remark",
     "remark:fix": "pnpm remark --output --",
     "commitlint": "commitlint",
+    "syncpack:fix": "syncpack format && syncpack fix-mismatches",
+    "fix": "pnpm lint:fix . && pnpm remark:fix . & pnpm format:fix . && pnpm syncpack:fix",
     "prepare": "husky install"
   },
   "devDependencies": {
@@ -39,12 +41,14 @@
     "@muravjev/configs-eslint-ts": "^0.1.5",
     "@muravjev/configs-prettier": "^0.1.4",
     "@muravjev/configs-remark": "^0.1.4",
+    "@muravjev/configs-syncpack": "^0.1.4",
     "eslint": "^8.26.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
     "remark": "^14.0.2",
-    "remark-cli": "^11.0.0"
+    "remark-cli": "^11.0.0",
+    "syncpack": "^8.3.9"
   },
   "engines": {
     "node": ">=14.16.0",
