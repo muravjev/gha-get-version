@@ -1,0 +1,21 @@
+name: Get Most Recent Tag Version
+description: Get version and number of additional commits from most recent git tag that is reachable from the last commit
+
+inputs:
+  match:
+    description: Only consider tags matching the given glob(7) pattern
+    required: true
+
+outputs:
+  version:
+    description: Version from the matched tag
+  commits:
+    description: Number of additional commits on top of the matched tag
+
+runs:
+  using: node16
+  main: dist/index.js
+
+branding:
+  color: blue
+  icon: tag
