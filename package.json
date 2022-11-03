@@ -28,9 +28,12 @@
     "lint": "eslint",
     "lint:fix": "pnpm lint --fix",
     "remark": "remark",
-    "remark:fix": "pnpm remark --output --"
+    "remark:fix": "pnpm remark --output --",
+    "commitlint": "commitlint"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.2.0",
+    "@muravjev/configs-commitlint": "^0.2.1",
     "@muravjev/configs-eslint-ts": "^0.1.5",
     "@muravjev/configs-prettier": "^0.1.4",
     "@muravjev/configs-remark": "^0.1.4",
