@@ -42,13 +42,16 @@
     "@muravjev/configs-prettier": "^0.1.4",
     "@muravjev/configs-remark": "^0.1.4",
     "@muravjev/configs-syncpack": "^0.1.4",
+    "@muravjev/configs-ts": "^0.1.2",
+    "@types/node": "^18.11.9",
     "eslint": "^8.26.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
     "remark": "^14.0.2",
     "remark-cli": "^11.0.0",
-    "syncpack": "^8.3.9"
+    "syncpack": "^8.3.9",
+    "typescript": "^4.8.4"
   },
   "engines": {
     "node": ">=14.16.0",

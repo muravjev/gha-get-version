@@ -8,6 +8,8 @@ specifiers:
   '@muravjev/configs-prettier': ^0.1.4
   '@muravjev/configs-remark': ^0.1.4
   '@muravjev/configs-syncpack': ^0.1.4
+  '@muravjev/configs-ts': ^0.1.2
+  '@types/node': ^18.11.9
   eslint: ^8.26.0
   husky: ^8.0.1
   lint-staged: ^13.0.3
@@ -15,6 +17,7 @@ specifiers:
   remark: ^14.0.2
   remark-cli: ^11.0.0
   syncpack: ^8.3.9
+  typescript: ^4.8.4
 
 devDependencies:
   '@changesets/cli': 2.25.2
@@ -24,6 +27,8 @@ devDependencies:
   '@muravjev/configs-prettier': 0.1.4_prettier@2.7.1
   '@muravjev/configs-remark': 0.1.4_a2j5wxpiqn5ku6oxy2x5tiyce4
   '@muravjev/configs-syncpack': 0.1.4_syncpack@8.3.9
+  '@muravjev/configs-ts': 0.1.2_cbe7ovvae6zqfnmtgctpgpys54
+  '@types/node': 18.11.9
   eslint: 8.26.0
   husky: 8.0.1
   lint-staged: 13.0.3
@@ -31,6 +36,7 @@ devDependencies:
   remark: 14.0.2
   remark-cli: 11.0.0
   syncpack: 8.3.9
+  typescript: 4.8.4
 
 packages:
 
@@ -333,7 +339,7 @@ packages:
       cosmiconfig-typescript-loader: 4.2.0_gbbg4brkmakf6m5nuj7scelzny
       lodash: 4.17.21
       resolve-from: 5.0.0
-      ts-node: 10.9.1_yodorn5kzjgomblrsstrk2spaa
+      ts-node: 10.9.1_cbe7ovvae6zqfnmtgctpgpys54
       typescript: 4.8.4
     transitivePeerDependencies:
       - '@swc/core'
@@ -552,6 +558,16 @@ packages:
       syncpack: ^8.3.9
     dependencies:
       syncpack: 8.3.9
+    dev: true
+
+  /@muravjev/configs-ts/0.1.2_cbe7ovvae6zqfnmtgctpgpys54:
+    resolution: {integrity: sha512-UX5OJrvdTmNSEVrxABTJ1Avk5wPYUP8RTFte2FW0mZ6/zMe4QFGNbfJraWUCFxcf2PgtXSKF7V5rOkmRWbSa6A==}
+    peerDependencies:
+      '@types/node': ^18.11.3
+      typescript: ^4.8.4
+    dependencies:
+      '@types/node': 18.11.9
+      typescript: 4.8.4
     dev: true
 
   /@nodelib/fs.scandir/2.1.5:
@@ -1278,7 +1294,7 @@ packages:
     dependencies:
       '@types/node': 14.18.33
       cosmiconfig: 7.0.1
-      ts-node: 10.9.1_yodorn5kzjgomblrsstrk2spaa
+      ts-node: 10.9.1_cbe7ovvae6zqfnmtgctpgpys54
       typescript: 4.8.4
     dev: true
 
@@ -4516,7 +4532,7 @@ packages:
     resolution: {integrity: sha512-AqTiAOLcj85xS7vQ8QkAV41hPDIJ71XJB4RCUrzo/1GM2CQwhkJGaf9Hgr7BOugMRpgGUrqRg/DrBDl4H40+8g==}
     dev: true
 
-  /ts-node/10.9.1_yodorn5kzjgomblrsstrk2spaa:
+  /ts-node/10.9.1_cbe7ovvae6zqfnmtgctpgpys54:
     resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==}
     hasBin: true
     peerDependencies:
@@ -4535,7 +4551,7 @@ packages:
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.3
-      '@types/node': 14.18.33
+      '@types/node': 18.11.9
       acorn: 8.8.1
       acorn-walk: 8.2.0
       arg: 4.1.3
