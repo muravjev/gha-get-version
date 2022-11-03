@@ -1,0 +1,33 @@
+{
+  "name": "get-most-recent-tag-version-action",
+  "version": "0.0.1",
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "muravjev",
+    "pnpm",
+    "github",
+    "action",
+    "git",
+    "version"
+  ],
+  "description": "Gets a version from the current branch",
+  "author": "Sergey Muravjev <sergey.muravjev@gmail.com> (http://github.com/muravjev)",
+  "license": "MIT",
+  "repository": "https://github.com/muravjev/get-most-recent-tag-version-action",
+  "homepage": "https://github.com/muravjev/get-most-recent-tag-version-action#readme",
+  "bugs": "https://github.com/muravjev/get-most-recent-tag-version-action/issues",
+  "scripts": {
+    "clean": "rimraf node_modules dist",
+    "fresh": "pnpm clean && pnpm i",
+    "nuke": "rimraf pnpm-lock.yaml && pnpm fresh"
+  },
+  "engines": {
+    "node": ">=14.16.0",
+    "pnpm": ">=7.10.0",
+    "npm": "please-use-pnpm",
+    "yarn": "please-use-pnpm"
+  },
+  "packageManager": "pnpm@7.10.0"
+}
