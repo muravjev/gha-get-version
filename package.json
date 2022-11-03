@@ -24,10 +24,14 @@
     "nuke": "rimraf pnpm-lock.yaml && pnpm fresh",
     "format": "prettier",
     "format:check": "pnpm format --check --debug-check",
-    "format:fix": "pnpm format --write"
+    "format:fix": "pnpm format --write",
+    "lint": "eslint",
+    "lint:fix": "pnpm lint --fix"
   },
   "devDependencies": {
+    "@muravjev/configs-eslint-ts": "^0.1.5",
     "@muravjev/configs-prettier": "^0.1.4",
+    "eslint": "^8.26.0",
     "prettier": "^2.7.1"
   },
   "engines": {

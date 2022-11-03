@@ -3,5 +3,9 @@
 
   "prettier.requireConfig": true,
 
+  "eslint.enable": true,
+  "eslint.alwaysShowStatus": true,
+  "eslint.debug": false,
+
   "cSpell.words": ["muravjev", "Sergey"]
 }
