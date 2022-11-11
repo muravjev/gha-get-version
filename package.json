@@ -1,5 +1,5 @@
 {
-  "name": "get-most-recent-tag-version-action",
+  "name": "@muravjev/get-tag-version-action",
   "version": "0.0.1",
   "publishConfig": {
     "access": "public"
@@ -15,9 +15,9 @@
   "description": "Gets a version from the current branch",
   "author": "Sergey Muravjev <sergey.muravjev@gmail.com> (http://github.com/muravjev)",
   "license": "MIT",
-  "repository": "https://github.com/muravjev/get-most-recent-tag-version-action",
-  "homepage": "https://github.com/muravjev/get-most-recent-tag-version-action#readme",
-  "bugs": "https://github.com/muravjev/get-most-recent-tag-version-action/issues",
+  "repository": "https://github.com/muravjev/get-version-action",
+  "homepage": "https://github.com/muravjev/get-version-action#readme",
+  "bugs": "https://github.com/muravjev/get-version-action/issues",
   "scripts": {
     "clean": "rimraf node_modules dist",
     "fresh": "pnpm clean && pnpm i",
@@ -27,7 +27,7 @@
     "format": "prettier",
     "format:check": "pnpm format --check --debug-check",
     "format:fix": "pnpm format --write",
-    "lint": "eslint",
+    "lint": "eslint --ext js,cjs,ts",
     "lint:fix": "pnpm lint --fix",
     "remark": "remark",
     "remark:fix": "pnpm remark --output --",
@@ -36,6 +36,7 @@
     "fix": "pnpm lint:fix . && pnpm remark:fix . & pnpm format:fix . && pnpm syncpack:fix",
     "prepare": "husky install"
   },
+  "type": "module",
   "main": "dist/main.ts",
   "dependencies": {
     "@actions/core": "^1.10.0",
