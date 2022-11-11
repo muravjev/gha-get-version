@@ -1,3 +1,11 @@
 {
-  "cSpell.words": ["muravjev", "Sergey"]
+  "files.eol": "\n",
+
+  "prettier.requireConfig": true,
+
+  "eslint.enable": true,
+  "eslint.alwaysShowStatus": true,
+  "eslint.debug": false,
+
+  "cSpell.words": ["commitlint", "muravjev", "Sergey", "syncpack"]
 }
