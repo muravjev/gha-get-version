@@ -7,5 +7,5 @@
   "eslint.alwaysShowStatus": true,
   "eslint.debug": false,
 
-  "cSpell.words": ["commitlint", "muravjev", "pnpm", "Sergey", "syncpack"]
+  "cSpell.words": ["commitlint", "esm", "muravjev", "pnpm", "Sergey", "syncpack"]
 }
