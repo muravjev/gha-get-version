@@ -1,1 +1,5 @@
-module.exports = require('@muravjev/configs-jest-ts');
+import config from '@muravjev/configs-jest-ts';
+export default {
+    ...config,
+    moduleDirectories: ['node_modules', '<rootDir>/src']
+};

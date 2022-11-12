@@ -3,14 +3,25 @@ description: Get version and number of additional commits from most recent git t
 
 inputs:
   match:
-    description: Only consider tags matching the given glob(7) pattern
-    required: true
+    description: 'Pattern (glob) to match the latest tag to extract the version from.'
+    default: '*'
+    required: false
+  bump:
+    description: "Type of the bump ('major', 'minor', 'patch' or 'none' for no bump)."
+    required: false
+    default: 'none'
+  format:
+    description: "Output version format '{prefix}{major}.{minor}.{patch}-{prerelease}+{metadata}#{commits}@{hash}'"
+    required: false
+    default: '{major}.{minor}.{patch}-{prerelease}+{metadata}'
+  trim:
+    description: "Format trim fields 'prefix|prerelease|metadata|patch|commits'"
+    required: false
+    default: 'prerelease|metadata|commits'
 
 outputs:
   version:
-    description: Version from the matched tag
-  commits:
-    description: Number of additional commits on top of the matched tag
+    description: Formatted version
 
 runs:
   using: node16

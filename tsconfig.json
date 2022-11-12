@@ -1,8 +1,12 @@
 {
   "extends": "@muravjev/configs-ts",
   "compilerOptions": {
-    "baseUrl": "src",
-    "rootDir": "src"
+    "rootDir": ".",
+    "baseUrl": "src"
   },
-  "include": ["src"]
+  "include": ["src", "tests", "scripts", "configs"],
+  "ts-node": {
+    "esm": true,
+    "experimentalSpecifierResolution": "node"
+  }
 }
