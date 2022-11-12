@@ -1,4 +1,4 @@
-name: Get Most Recent Tag Version
+name: Get Version from Tag
 description: Get version and number of additional commits from most recent git tag that is reachable from the last commit
 
 inputs:
